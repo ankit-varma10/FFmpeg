@@ -148,6 +148,7 @@ extern const AVInputFormat  ff_eac3_demuxer;
 extern const AVOutputFormat ff_eac3_muxer;
 extern const AVInputFormat  ff_epaf_demuxer;
 extern const AVOutputFormat ff_f4v_muxer;
+extern const AVOutputFormat ff_rush_muxer;
 extern const AVInputFormat  ff_ffmetadata_demuxer;
 extern const AVOutputFormat ff_ffmetadata_muxer;
 extern const AVOutputFormat ff_fifo_muxer;

@@ -480,6 +480,13 @@ static int rush_write_header(AVFormatContext *s)
     AVIOContext *pb = s->pb;
     int i, ret = 0;
 
+    AVDictionaryEntry *tag = NULL;
+
+    // payload test
+    tag = av_dict_get(s->metadata, "connectpayload", NULL, 0);
+    av_log(s, AV_LOG_ERROR, "connectpayload %s\n", tag->value);
+    // payload test
+
     ctx->index_to_track_id = av_calloc(s->nb_streams, sizeof(uint32_t));
     if (!ctx->index_to_track_id) {
         return AVERROR(ENOMEM);
